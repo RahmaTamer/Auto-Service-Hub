@@ -1,0 +1,33 @@
+.footer {
+  background-color: #000;
+  padding: 3rem;
+  text-align: center;
+  border-top: 4px solid var(--text-crimson);
+  margin-top: 5rem;
+  position: relative;
+}
+
+.footer p {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer strong {
+  color: var(--text-crimson);
+  font-size: 1.2rem;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 5px;
+  background: var(--text-crimson);
+  box-shadow: 0 0 20px var(--text-crimson);
+}

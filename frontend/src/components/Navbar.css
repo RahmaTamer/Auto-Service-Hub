@@ -1,0 +1,57 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 1.5rem 5%;
+  border-bottom: 4px solid var(--text-crimson);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 30px rgba(255, 23, 68, 0.3);
+}
+
+.nav-brand a {
+  color: var(--text-crimson);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(255, 23, 68, 0.6);
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a, .nav-links button {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.3rem; 
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links button:hover {
+  color: var(--text-crimson);
+  transform: skewX(-10deg) scale(1.1);
+  filter: drop-shadow(0 0 8px var(--text-crimson));
+}
+
+.user-welcome {
+  color: var(--text-crimson);
+  font-weight: 900;
+  font-size: 1.2rem;
+  border-right: 2px solid #333;
+  padding-right: 1.5rem;
+}

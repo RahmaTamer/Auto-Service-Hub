@@ -1,0 +1,37 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.custom-spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #111;
+  border-top: 8px solid var(--text-crimson);
+  border-right: 8px solid var(--text-crimson);
+  border-radius: 50%;
+  animation: turbo-spin 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  box-shadow: 0 0 20px rgba(255, 23, 68, 0.4);
+}
+
+@keyframes turbo-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader-text {
+  margin-top: 20px;
+  color: var(--text-crimson);
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.3; }
+}

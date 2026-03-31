@@ -1,0 +1,53 @@
+.auth-container {
+  max-width: 550px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.auth-card {
+  background: var(--card-bg);
+  padding: 4rem !important;
+  border: 1px solid rgba(255, 23, 68, 0.2);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8), 0 0 20px rgba(255, 23, 68, 0.1);
+  position: relative;
+}
+
+.auth-card::after {
+  content: "RACING SERIES";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.7rem;
+  color: var(--text-crimson);
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.auth-header h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem !important;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px var(--text-crimson);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.auth-footer a {
+  color: var(--text-crimson);
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
